@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js" defer></script>
+    <script defer>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <title>Alkhidmat MUN</title>
+  </head>
+  <body>
+    <div class="bgImg"></div>
+    <div id="particles-js"></div>
+
+    <div class="nav">
+      <div class="left">
+        <img class="navLogo" src="res/favicon.png" alt="" srcset="" />
+        <p class="txt">Alkhidmat MUN</p>
+      </div>
+      <div class="right">
+        <ul class="nav-list">
+          <!-- <li><a href="#">Home</a></li> -->
+          <li><a href="#register">Register</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="head">
+      <img
+        class="logoM"
+        src="res/logo.png"
+        alt="Alkhidmat MUN Logo"
+        srcset=""
+      />
+      <h1 class="heading">
+        Empowering youth through <br />
+        leadership, diplomacy, and service.
+      </h1>
+      <div class="datesWrapper">
+        <div class="dates">
+          <div class="5">5 <span>th</span></div>
+          <div class="6">6 <span>th</span></div>
+          <div class="7">7 <span>th</span></div>
+        </div>
+        <span class="month">september</span>
+      </div>
+    </div>
+
+    <section class="regCen" id="register">
+      <button class="regBtn">
+        <span>Register Now</span>
+        <svg fill="none" viewBox="0 0 24 24" class="arrow">
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="currentColor"
+            d="M5 12h14M13 6l6 6-6 6"
+          ></path>
+        </svg>
+      </button>
+    </section>
+    <section class="about" id="about">
+      <img src="res/1.png" alt="Alkhidmat Building" srcset="" class="bgAbout" />
+      <h3 class="loc">About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint
+        accusamus rem consectetur, ipsa expedita! Corporis, deleniti eaque
+        laborum nisi quaerat impedit eos consequatur, nihil perferendis
+        perspiciatis odio tenetur illo? Alkhidmat MUN is dedicated to fostering
+        leadership and diplomatic skills among youth through engaging Model
+        United Nations conferences. Participants collaborate, debate, and
+        develop solutions to global issues, enhancing their public speaking and
+        critical thinking abilities. Our event brings together students from
+        diverse backgrounds, encouraging teamwork and cultural understanding.
+        Join us to experience a platform that empowers the next generation of
+        leaders and changemakers.
+      </p>
+    </section>
+
+    <section class="venue" id="venue">
+      <h3 class="loc">Venue</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.657993480385!2d74.17541001174361!3d31.423547674151095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918fe5bcfe35cdf%3A0x15446f84c6e50f19!2sQarshi%20University!5e0!3m2!1sen!2s!4v1753372989311!5m2!1sen!2s&colorScheme=dark"
+        width="800"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="documents" id="documents">
+      <div class="container">
+        <button class="morph-btn" data-url="https://example.com/">
+          <span class="inv">Invite</span>
+        </button>
+        <button class="morph-btn" data-url="https://example.com/">
+          <span class="spon">Sponsorship Proposal</span>
+        </button>
+      </div>
+
+      <div class="iframe-wrapper" id="iframeWrapper">
+        <button class="close-btn" onclick="closeIframe()">✕</button>
+        <iframe id="iframeView" src="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="coc" id="coc">
+      <h2 class="cocH">Code Of Conduct</h2>
+      <ol>
+        <li>
+          All delegates must maintain decorum and respect towards chairs, staff,
+          and fellow participants.
+        </li>
+        <li>
+          Use of discriminatory or offensive language will not be tolerated.
+        </li>
+        <li>
+          Delegates must adhere to formal dress code unless informed otherwise.
+        </li>
+        <li>
+          Plagiarism in position papers or speeches is strictly prohibited.
+        </li>
+        <li>
+          Mobile phones must be on silent mode during sessions; use only during
+          breaks.
+        </li>
+        <li>
+          Consumption of drugs or alcohol at the event premises will result in
+          immediate expulsion.
+        </li>
+        <li>
+          Delegates are expected to be punctual for all sessions and events.
+        </li>
+        <li>
+          Organizers reserve the right to take disciplinary action for any
+          misconduct.
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="conH">Contact Us</h2>
+      <div class="btnCon">
+        <div>
+          <button>
+            <img class="doc" src="res/ig.png" alt="document" />
+            <p class="label">Alkhidmat MUN Instagram</p>
+          </button>
+        </div>
+        <div>
+          <button>
+            <img class="doc" src="res/ig.png" alt="document" />
+            <p class="label">Alkhidmat Official Instagram</p>
+          </button>
+        </div>
+      </div>
+      <div class="numbers">
+        <p>Taha Niazi - Director General: <strong> +92 309 8411999 </strong></p>
+        <p>Abid - Secretary General: <strong> +92 311 4589744</strong></p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>2025 Alkhidmat MUN. All rights reserved.</p>
+    </div>
+  </body>
+</html>
