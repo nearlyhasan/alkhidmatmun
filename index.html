@@ -24,56 +24,6 @@
         <p class="txt">Alkhidmat MUN</p>
       </div>
       <div class="right">
-        <div class="hamburger" onclick="toggleMenu()">
-          <svg
-            width="64px"
-            height="64px"
-            viewBox="-4.8 -4.8 33.60 33.60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            transform="matrix(1, 0, 0, -1, 0, 0)rotate(0)"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke="#CCCCCC"
-              stroke-width="0.24000000000000005"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M20 7L4 7"
-                stroke="#ffffff"
-                stroke-width="2.088"
-                stroke-linecap="round"
-              ></path>
-              <path
-                d="M20 12L4 12"
-                stroke="#ffffff"
-                stroke-width="2.088"
-                stroke-linecap="round"
-              ></path>
-              <path
-                d="M20 17L4 17"
-                stroke="#ffffff"
-                stroke-width="2.088"
-                stroke-linecap="round"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="menuWrap">
-          <div class="menu">
-            <ul class="navMenulist">
-              <!-- <li><a href="#">Home</a></li> -->
-              <li><a href="#register">Register</a></li>
-              <li><a href="#venue">Venue</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#about">About</a></li>
-            </ul>
-          </div>
-        </div>
         <ul class="nav-list">
           <!-- <li><a href="#">Home</a></li> -->
           <li><a href="#register">Register</a></li>
@@ -106,7 +56,7 @@
     </div>
 
     <section class="regCen" id="register">
-      <button class="regBtn">
+      <button class="regBtn" onclick="window.location.href='https://forms.fillout.com/t/4LJvvShtKXus'">
         <span>Register Now</span>
         <svg fill="none" viewBox="0 0 24 24" class="arrow">
           <path
@@ -122,18 +72,16 @@
     <section class="about" id="about">
       <h3 class="loc">About Us</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint
-        accusamus rem consectetur, ipsa expedita! Corporis, deleniti eaque
-        laborum nisi quaerat impedit eos consequatur, nihil perferendis
-        perspiciatis odio tenetur illo? Alkhidmat MUN is dedicated to fostering
-        leadership and diplomatic skills among youth through engaging Model
-        United Nations conferences.
+        Alkhidmat MUN is a student-led, charity conference simulating UN
+        committees to promote dialogue, diplomacy, and leadership. Backed by
+        Alkhidmat Foundation, it empowers youth to become socially responsible
+        changemakers.
       </p>
     </section>
 
     <section class="video" id="video">
       <iframe
-        src="https://www.youtube.com/embed/your-video-id"
+        src="https://www.youtube.com/embed/nigg-"
         frameborder="0"
         allowfullscreen
       ></iframe>
@@ -148,7 +96,7 @@
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerpolicy="strict"
       ></iframe>
     </section>
 
@@ -158,46 +106,42 @@
 
         <div class="numbers">
           <p>
-            Taha Niazi - Director General:
-            <strong>
-              <br />
-              <a href="tel:+923098411999">+92 309 8411999 </a></strong
-            >
+            <strong> Taha Niazi - Director General: </strong>
+            <br />
+            <a href="tel:+923098411999">+92 309 8411999 </a>
           </p>
           <p>
-            Rehan Abid - Secretary General:
-            <strong>
-              <br />
-              <a href="tel:+923114589744">+92 311 4589744 </a></strong
-            >
+            <strong> Rehan Abid - Secretary General:</strong>
+
+            <br />
+            <a href="tel:+923114589744">+92 311 4589744 </a>
           </p>
           <p>
-            Rizwan Khokhar - Director Registrations:
-            <strong>
-              <br />
-              <a href="tel:+923344394001">+92 334 4394001 </a></strong
-            >
+            <strong> Rizwan Khokhar - Director Registrations: </strong>
+            <br />
+            <a href="tel:+923344394001">+92 334 4394001 </a>
           </p>
         </div>
 
         <div class="btnWrapper">
-          <button>
+          <button onclick="window.open('https://www.instagram.com/alkhidmat.mun','_blank')">
             <img class="doc" src="res/ig.png" alt="document" />
-            <p class="label">Alkhidmat MUN</p>
           </button>
-          <button onclick="window.open('http://alkhidmat.org','_blank')">
+          <button >
             <img class="doc" src="res/doc.png" alt="document" />
-            <p class="label">Alkhidmat Website</p>
           </button>
         </div>
       </div>
 
       <div class="documentsWrapper">
-        <button class="ISbtn" data-url="https://example.com/">
+        <button class="ISbtn" onclick="window.location.href='res/alkhidmat-mun-invite.pdf'">
           <span class="IStxt">Invite</span>
         </button>
-        <button class="ISbtn" data-url="https://example.com/">
+        <button class="ISbtn" onclick="window.location.href='google.com'">
           <span class="IStxt">Sponsorship Proposal</span>
+        </button>
+        <button class="ISbtn" onclick="window.location.href='https://trinkits.fillout.com/mun10'">
+          <span class="IStxt">Ambassador's Form</span>
         </button>
       </div>
     </section>
@@ -205,33 +149,17 @@
     <section class="coc" id="coc">
       <h2 class="cocH">Code Of Conduct</h2>
       <ul>
+        <li>Delegates must register on time.</li>
+        <li>Delegates must attend the event fully.</li>
+        <li>Delegates must wear their ID cards at all times.</li>
+        <li>Delegates must follow all campus rules.</li>
         <li>
-          All delegates must maintain decorum and respect towards chairs, staff,
-          and fellow participants.
+          Any misconduct or possession of prohibited items will result in
+          action.
         </li>
         <li>
-          Use of discriminatory or offensive language will not be tolerated.
-        </li>
-        <li>
-          Delegates must adhere to formal dress code unless informed otherwise.
-        </li>
-        <li>
-          Plagiarism in position papers or speeches is strictly prohibited.
-        </li>
-        <li>
-          Mobile phones must be on silent mode during sessions; use only during
-          breaks.
-        </li>
-        <li>
-          Consumption of drugs or alcohol at the event premises will result in
-          immediate expulsion.
-        </li>
-        <li>
-          Delegates are expected to be punctual for all sessions and events.
-        </li>
-        <li>
-          Organizers reserve the right to take disciplinary action for any
-          misconduct.
+          Delegates are expected to maintain respect and discipline at all
+          times.
         </li>
       </ul>
     </section>
