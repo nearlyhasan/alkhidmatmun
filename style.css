@@ -509,6 +509,7 @@ p.txt {
 }
 
 .coc ul {
+  list-style: none;
   text-decoration: none;
   line-height: clamp(16px, 2.8vw, 30px);
   font-size: clamp(11px, 1.6vw, 18px);
@@ -526,6 +527,7 @@ p.txt {
   outline-offset: 0px;
   text-shadow: none;
   border-radius: 11px;
+  -webkit-border-radius: 11px;
   background-color: #44628b00;
   color: #ffffff;
   display: -webkit-box;
