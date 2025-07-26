@@ -24,11 +24,60 @@
         <p class="txt">Alkhidmat MUN</p>
       </div>
       <div class="right">
+        <div class="hamburger" onclick="toggleMenu()">
+          <svg
+            width="64px"
+            height="64px"
+            viewBox="-4.8 -4.8 33.60 33.60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            transform="matrix(1, 0, 0, -1, 0, 0)rotate(0)"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke="#CCCCCC"
+              stroke-width="0.24000000000000005"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20 7L4 7"
+                stroke="#ffffff"
+                stroke-width="2.088"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 12L4 12"
+                stroke="#ffffff"
+                stroke-width="2.088"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 17L4 17"
+                stroke="#ffffff"
+                stroke-width="2.088"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="menuWrap">
+          <div class="menu">
+            <ul class="navMenulist">
+              <!-- <li><a href="#">Home</a></li> -->
+              <li><a href="#register">Register</a></li>
+              <li><a href="#venue">Venue</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+        </div>
         <ul class="nav-list">
           <!-- <li><a href="#">Home</a></li> -->
           <li><a href="#register">Register</a></li>
           <li><a href="#venue">Venue</a></li>
-          <li><a href="#documents">Documents</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#about">About</a></li>
         </ul>
@@ -71,7 +120,6 @@
       </button>
     </section>
     <section class="about" id="about">
-      <img src="res/1.png" alt="Alkhidmat Building" srcset="" class="bgAbout" />
       <h3 class="loc">About Us</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint
@@ -79,13 +127,16 @@
         laborum nisi quaerat impedit eos consequatur, nihil perferendis
         perspiciatis odio tenetur illo? Alkhidmat MUN is dedicated to fostering
         leadership and diplomatic skills among youth through engaging Model
-        United Nations conferences. Participants collaborate, debate, and
-        develop solutions to global issues, enhancing their public speaking and
-        critical thinking abilities. Our event brings together students from
-        diverse backgrounds, encouraging teamwork and cultural understanding.
-        Join us to experience a platform that empowers the next generation of
-        leaders and changemakers.
+        United Nations conferences.
       </p>
+    </section>
+
+    <section class="video" id="video">
+      <iframe
+        src="https://www.youtube.com/embed/your-video-id"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
     </section>
 
     <section class="venue" id="venue">
@@ -101,25 +152,59 @@
       ></iframe>
     </section>
 
-    <section class="documents" id="documents">
-      <div class="container">
-        <button class="morph-btn" data-url="https://example.com/">
-          <span class="inv">Invite</span>
-        </button>
-        <button class="morph-btn" data-url="https://example.com/">
-          <span class="spon">Sponsorship Proposal</span>
-        </button>
+    <section class="conDoc" id="contact">
+      <div class="contactWrapper">
+        <h2 class="conH">Contact Us</h2>
+
+        <div class="numbers">
+          <p>
+            Taha Niazi - Director General:
+            <strong>
+              <br />
+              <a href="tel:+923098411999">+92 309 8411999 </a></strong
+            >
+          </p>
+          <p>
+            Rehan Abid - Secretary General:
+            <strong>
+              <br />
+              <a href="tel:+923114589744">+92 311 4589744 </a></strong
+            >
+          </p>
+          <p>
+            Rizwan Khokhar - Director Registrations:
+            <strong>
+              <br />
+              <a href="tel:+923344394001">+92 334 4394001 </a></strong
+            >
+          </p>
+        </div>
+
+        <div class="btnWrapper">
+          <button>
+            <img class="doc" src="res/ig.png" alt="document" />
+            <p class="label">Alkhidmat MUN</p>
+          </button>
+          <button onclick="window.open('http://alkhidmat.org','_blank')">
+            <img class="doc" src="res/doc.png" alt="document" />
+            <p class="label">Alkhidmat Website</p>
+          </button>
+        </div>
       </div>
 
-      <div class="iframe-wrapper" id="iframeWrapper">
-        <button class="close-btn" onclick="closeIframe()">✕</button>
-        <iframe id="iframeView" src="" loading="lazy"></iframe>
+      <div class="documentsWrapper">
+        <button class="ISbtn" data-url="https://example.com/">
+          <span class="IStxt">Invite</span>
+        </button>
+        <button class="ISbtn" data-url="https://example.com/">
+          <span class="IStxt">Sponsorship Proposal</span>
+        </button>
       </div>
     </section>
 
     <section class="coc" id="coc">
       <h2 class="cocH">Code Of Conduct</h2>
-      <ol>
+      <ul>
         <li>
           All delegates must maintain decorum and respect towards chairs, staff,
           and fellow participants.
@@ -148,29 +233,7 @@
           Organizers reserve the right to take disciplinary action for any
           misconduct.
         </li>
-      </ol>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="conH">Contact Us</h2>
-      <div class="btnCon">
-        <div>
-          <button>
-            <img class="doc" src="res/ig.png" alt="document" />
-            <p class="label">Alkhidmat MUN Instagram</p>
-          </button>
-        </div>
-        <div>
-          <button>
-            <img class="doc" src="res/ig.png" alt="document" />
-            <p class="label">Alkhidmat Official Instagram</p>
-          </button>
-        </div>
-      </div>
-      <div class="numbers">
-        <p>Taha Niazi - Director General: <strong> +92 309 8411999 </strong></p>
-        <p>Abid - Secretary General: <strong> +92 311 4589744</strong></p>
-      </div>
+      </ul>
     </section>
 
     <div class="footer">
