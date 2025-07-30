@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="script.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script defer>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("callback - particles.js config loaded");
       });
-    </script>
+    </script> -->
+    <script src="script.js" defer></script>
     <title>Alkhidmat MUN</title>
   </head>
   <body>
@@ -20,7 +20,7 @@
 
     <div class="nav">
       <div class="left">
-        <img class="navLogo" src="res/favicon.png" alt="" srcset=""/>
+        <img class="navLogo" src="res/favicon.png" alt="" srcset="" />
         <p class="txt">Alkhidmat MUN</p>
       </div>
       <div class="right">
@@ -56,7 +56,10 @@
     </div>
 
     <section class="regCen" id="register">
-      <button class="regBtn" onclick="window.location.href='https://forms.fillout.com/t/4LJvvShtKXus'">
+      <button
+        class="regBtn"
+        onclick="window.location.href='https://forms.fillout.com/t/4LJvvShtKXus'"
+      >
         <span>Register Now</span>
         <svg fill="none" viewBox="0 0 24 24" class="arrow">
           <path
@@ -124,23 +127,31 @@
         </div>
 
         <div class="btnWrapper">
-          <button onclick="window.open('https://www.instagram.com/alkhidmat.mun','_blank')">
+          <button
+            onclick="window.open('https://www.instagram.com/alkhidmat.mun','_blank')"
+          >
             <img class="doc" src="res/ig.png" alt="document" />
           </button>
-          <button >
+          <button>
             <img class="doc" src="res/doc.png" alt="document" />
           </button>
         </div>
       </div>
 
       <div class="documentsWrapper">
-        <button class="ISbtn" onclick="window.location.href='res/alkhidmat-mun-invite.pdf'">
+        <button
+          class="ISbtn"
+          onclick="window.location.href='res/alkhidmat-mun-invite.pdf'"
+        >
           <span class="IStxt">Invite</span>
         </button>
         <button class="ISbtn" onclick="window.location.href='google.com'">
           <span class="IStxt">Sponsorship Proposal</span>
         </button>
-        <button class="ISbtn" onclick="window.location.href='https://trinkits.fillout.com/mun10'">
+        <button
+          class="ISbtn"
+          onclick="window.location.href='https://trinkits.fillout.com/mun10'"
+        >
           <span class="IStxt">Ambassador's Form</span>
         </button>
       </div>
@@ -148,20 +159,14 @@
 
     <section class="coc" id="coc">
       <h2 class="cocH">Code Of Conduct</h2>
-      <ul>
-        <li>Delegates must register on time.</li>
-        <li>Delegates must attend the event fully.</li>
-        <li>Delegates must wear their ID cards at all times.</li>
-        <li>Delegates must follow all campus rules.</li>
-        <li>
-          Any misconduct or possession of prohibited items will result in
-          action.
-        </li>
-        <li>
-          Delegates are expected to maintain respect and discipline at all
-          times.
-        </li>
-      </ul>
+      <p>
+        Delegates are required to register on time and remain present for the
+        full duration of the event. Wearing identification badges at all times
+        is mandatory. Campus rules must be followed strictly. Any misconduct or
+        possession of prohibited items will result in disciplinary action.
+        Participants are expected to maintain decorum, respect, and discipline
+        throughout the conference.
+      </p>
     </section>
 
     <div class="footer">

@@ -370,12 +370,25 @@ p.txt {
   width: 100%;
   height: 100%;
   z-index: 0;
-  opacity: 0.07;
+  opacity: 0.1;
+  animation: pulse 10s infinite;
   -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
           box-shadow: 0 0 10px rgb(7, 7, 7);
 }
 
-.about p {
+@keyframes pulse {
+  0% {
+    opacity: 0.09;
+  }
+  50% {
+    opacity: 0.11;
+  }
+  100% {
+    opacity: 0.09;
+  }
+}
+
+.about p, .coc p {
   color: #ffffff;
   font-size: clamp(0.6rem, 1.6vw, 1.2rem);
   font-family: "Poppins", Arial, sans-serif;
@@ -508,16 +521,6 @@ p.txt {
   margin-top: 40px;
 }
 
-.coc ul {
-  list-style: none;
-  text-decoration: none;
-  line-height: clamp(16px, 2.8vw, 30px);
-  font-size: clamp(11px, 1.6vw, 18px);
-  text-align: justify;
-  margin: 0 clamp(30px, 4.5vw, 50px);
-  padding: 0;
-}
-
 .btnWrapper button,
 .ISbtn {
   border: 1px solid rgba(255, 255, 255, 0); /* always 1px */
@@ -586,7 +589,6 @@ p.txt {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: clamp(20px, 5vw, 30px);
 }
 
 .doc {
@@ -608,7 +610,7 @@ p.txt {
 
 .conH {
   margin: 0;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .numbers {
@@ -626,11 +628,10 @@ p.txt {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 95%;
   color: #ffffff;
   font-weight: 400;
-  margin: 18px 10px;
+  margin: 0 10px;
   gap: 14px;
   font-size: clamp(0.8rem, 1.6vw, 1.1rem);
 }
@@ -775,5 +776,9 @@ p.txt {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 20px;
+  padding: clamp(16px, 2vw, 20px);
+}
+
+.contactWrapper {
+  justify-content: space-evenly;
 }
