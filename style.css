@@ -363,14 +363,13 @@ p.txt {
 
 .bgImg {
   position: fixed;
-  background: url(res/bgMap.png) no-repeat center center;
+  background: url(res/bgMap.webp) no-repeat center center;
   background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-  opacity: 0.1;
   animation: pulse 10s infinite;
   -webkit-box-shadow: 0 0 10px rgb(7, 7, 7);
           box-shadow: 0 0 10px rgb(7, 7, 7);
